@@ -4,7 +4,18 @@
   <meta charset="UTF-8">
   <title>Redirecionando...</title>
   <script>
-    window.location.href = "https://mais.red/run/25685";
+    document.addEventListener("DOMContentLoaded", function() {
+      // Verifica se o lead já foi redirecionado
+      if (localStorage.getItem("jaRedirecionado")) {
+        // Bloqueia o acesso (pode trocar o texto ou redirecionar para outra página)
+        document.body.innerHTML = "<h2>Acesso já utilizado. Você não pode entrar novamente.</h2>";
+      } else {
+        // Marca que já foi redirecionado
+        localStorage.setItem("jaRedirecionado", "true");
+        // Faz o redirecionamento
+        window.location.href = "https://mais.red/run/25685";
+      }
+    });
   </script>
 </head>
 <body>
