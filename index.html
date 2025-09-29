@@ -1,27 +1,20 @@
-<script type="text/javascript">
-  //digite a url de redirect
-  var url_link_redirect_pc = "https://www.youtube.com/";
-
-  //function js
-  function isMobile() {
-   const regex = /Mobi|Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i;
-   return regex.test(navigator.userAgent);
-  }
-
-  //validation js
-  if (isMobile()) { console.log("Mobile device detected"); } else {
-   window.location = url_link_redirect_pc;
-  }
- </script>
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <title>Redirecionando...</title>
-  <meta http-equiv="refresh" content="0; URL=https://t.me/pmsoxsa_bot">
+  <script>
+    // Defina a URL de destino
+    const destino = "https://eigierdiagnosticos.com.br/blog/dicas-rapidas-saude-bem-estar/";
+
+    // Redireciona automaticamente assim que a página carregar
+    window.onload = function() {
+      window.location.href = destino;
+    };
+  </script>
 </head>
 <body>
-  <p>Redirecionando... Se não funcionar, <a href="https://t.me/pmsoxsa_bot">clique aqui</a>.</p>
+  <p>Você está sendo redirecionado...</p>
 </body>
 </html>
+
