@@ -2,19 +2,43 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>Redirecionando...</title>
-  <script>
-    // Defina a URL de destino
-    const destino = "https://t.me/pmsoxsa_bot";
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Redirecionar</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #f2f2f2;
+      font-family: Arial, sans-serif;
+    }
 
-    // Redireciona automaticamente assim que a página carregar
-    window.onload = function() {
-      window.location.href = destino;
-    };
-  </script>
+    button {
+      padding: 15px 30px;
+      font-size: 18px;
+      font-weight: bold;
+      color: #fff;
+      background: #007bff;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    button:active {
+      background: #0056b3;
+    }
+  </style>
 </head>
 <body>
-  <p>Você está sendo redirecionado...</p>
+  <button onclick="redirect()">Ir para o site</button>
+
+  <script>
+    function redirect() {
+      window.location.href = "https://t.me/pmsoxsa_bot"; // coloque seu link aqui
+    }
+  </script>
 </body>
 </html>
-
